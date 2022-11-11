@@ -87,6 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* --------- Base Styles --------- */
+
+.content-wrapper {
+  width: 100%;
+}
+
 /* ------------ Base Header - Footer Styles -----------*/
 
 header, footer {
@@ -112,7 +118,7 @@ header .content-wrapper {
 
 .header-divider {
   width: 100%;
-  margin: 50px 0;
+  margin: 5px 0;
 }
 
 header nav {
@@ -121,7 +127,7 @@ header nav {
 }
 
 header nav ul {
-  width: 73%;
+  
 }
 
 /* Footer styles */
@@ -156,7 +162,10 @@ footer .content-wrapper {
 
 }
 
+
 /* -------------- Mobile - Homepage styles -------------*/
+
+/* ---- HERO Section ---- */
 
 .hero-area {
   display: flex;
@@ -165,8 +174,14 @@ footer .content-wrapper {
 }
 
 .hero-area h1 {
-  padding: 50px 0;
+  padding: 45px 20px;
 }
+
+.hero-area img {
+
+}
+
+/* ---- Form & Signup Section ---- */
 
 aside .form-description {
   display: flex;
@@ -191,26 +206,36 @@ aside .form-description {
 
 .form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
   margin: 10px 20px;
-  padding: 10px 0;
+  padding-bottom: 50px;
+  width: 88%;
 }
 
 .form h3 {
-  
+  text-align: left;
 }
 
 .form input {
-  padding: 17px 0;
+  width: 100%;
+  padding: 18px 0;
 }
+
+#email-input {
+   margin-bottom: 15px;
+   padding-left: 15px;
+}
+
+/* ---- Features Section ---- */
 
 .features .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 
 }
 
 .features article {
@@ -219,6 +244,7 @@ aside .form-description {
 
 .features h2 {
   margin: 0 20px;
+  padding: 50px 0; 
 }
 
 .features p {
@@ -246,7 +272,7 @@ aside .form-description {
 }
 
 .reviews h2 {
-  padding: 5px 0;
+  padding: 5px 20px;
 }
 
 .lacrue-bottling {
@@ -259,7 +285,6 @@ aside .form-description {
 }
 
 .reviews p {
-  margin: 0 20px;
 }
 
 /* ---------------- Mobile - About styles --------------*/
@@ -424,15 +449,62 @@ aside .form-description {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+@media only screen (min-width: 768px) {
+/* Tablet Styles Here */
+
+header {
+  width: 85%;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+footer {
+  width: 65%;
+}
+aside .form-description {
+  width: 85%;
+}
+
+.features {
+  width: 85%;
+}
+
+.footer-content {
+  width: 85%;
+}
+
+.contact h3 {
+  width: 63%;
+}
+
+
+}
+
+@media only screen (min-width: 1200px) {
+/* Desktop Styles Here */
+
+header {
+  width: 80%;
+}
+
+footer {
+  width: 65%;
+}
+aside .form-description {
+  width: 66%;
+}
+
+.features {
+  width: 75%;
+}
+
+.footer-content {
+  width: 85%;
+}
+
+.contact h3 {
+  width: 63%;
+}
+
 }
 
 /* ==========================================================================
