@@ -127,7 +127,7 @@ header nav {
 }
 
 header nav ul {
-  
+  display: flex;
 }
 
 /* Footer styles */
@@ -450,36 +450,134 @@ aside .form-description {
    ========================================================================== */
 
 
-@media only screen (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 /* Tablet Styles Here */
 
-header {
-  width: 85%;
+/* Header-Footer Styles */
+
+  header {
+    width: 100%;
+    justify-content: center;
+  }
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-basis: 83%;
+  }
+  .header-divider {
+    width: 0%;
+    margin: 0;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header nav ul {
+    justify-content: flex-end;
+    flex-flow: row;
+  }
+
+  header nav ul li {
+    padding: 0 5px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .footer-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .contact {
+    width: 33%;
+  }
+
+  .social {
+    width: 40%;
+  }
+
+  .copyright {
+    width: 33%;
+  }
+
+/* HOMEPAGE - MAIN Section Tablet Styles */
+
+  .hero-area h1{
+    width: 80%;
+    padding: 90px 160px 400px 45px;
+  }
+  
+  #signup-section{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  width: 100%;
+  }
+
+  .signup {
+    margin: 0; 
+    padding: 0;
+    width: 33%;
+  }
+
+  aside .form {
+    width: 38%;
+    margin: 0;
+    padding: 0 0;
+  }
+
+  .features {
+    width: 100%;
+  }
+  
+  .features h2 {
+    width: 85%;
+    padding: 90px 0 0 0;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 20%;
+    padding: 40px 75px;
+    
+  }
+
+  .reviews .content-wrapper {
+    justify-content: flex-start;
+  }
+
+  .reviews h2 {
+    padding-left: 60px;
+  }
+
+  .reviews .lacrue-bottling {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin: 0 60px; 
+  }
+
+/* FAQ Tablet Styles */
+
+.faq-content {
+  flex-basis: 80%;
 }
 
-footer {
-  width: 65%;
-}
-aside .form-description {
-  width: 85%;
 }
 
-.features {
-  width: 85%;
-}
-
-.footer-content {
-  width: 85%;
-}
-
-.contact h3 {
-  width: 63%;
-}
-
-
-}
-
-@media only screen (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 /* Desktop Styles Here */
 
 header {
