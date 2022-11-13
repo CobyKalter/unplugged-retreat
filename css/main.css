@@ -571,10 +571,41 @@ aside .form-description {
 
 /* FAQ Tablet Styles */
 
-.faq-content {
-  flex-basis: 80%;
+.faq .content-wrapper {
+  justify-content: space-between;
 }
 
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+}
+
+/* ABOUT PAGE Tablet Styles */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-content p {
+  width: 80%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 66%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 1200px) {
