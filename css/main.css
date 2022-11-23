@@ -97,6 +97,7 @@ body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
  line-height: 1.5em;
+ color: #e2e3ed;
 }
 
 ul, ol {
@@ -108,19 +109,29 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
 h3, h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-  line-height: auto;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
 p {
-  font-size: 1.125em;
+  font-size: .875em;
 }
 
 img {
@@ -142,6 +153,7 @@ address {
 /* ------------ Base Header - Footer Styles -----------*/
 
 header, footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,13 +180,17 @@ header .content-wrapper {
 }
 
 header nav {
+  font-weight: bold;
+  font-size: 1.125em;
   width: 60%;
   padding: 15px 0;
 }
 
 header nav ul {
   display: flex;
+  text-transform: uppercase;
 }
+
 
 /* Footer styles */
 
@@ -193,11 +209,11 @@ footer .content-wrapper {
   margin; 0;
 }
 .contact {
-
+  text-align: center;
 }
 
 .social {
-
+  text-align: center;
 }
 
 .social-icons {
@@ -205,7 +221,7 @@ footer .content-wrapper {
 }
 
 .copyright {
-
+  text-align: center;
 }
 
 
@@ -236,6 +252,37 @@ aside .form-description {
   flex-flow: row wrap;
   margin: 30px 0 50px 0;
 }
+
+aside {
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 .signup {
   padding: 10px 0;
@@ -295,6 +342,7 @@ aside .form-description {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features-item {
@@ -315,6 +363,8 @@ aside .form-description {
   align-items: center;
   flex-flow: row wrap;
   margin: 30px 0;
+  background-color: #2a423a;
+  width: 100%;
 }
 
 .reviews h2 {
@@ -336,6 +386,7 @@ aside .form-description {
 /* ---------------- Mobile - About styles --------------*/
 
 .mission .content-wrapper {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,6 +402,7 @@ aside .form-description {
 }
 
 .contact-section .content-wrapper {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,6 +433,7 @@ aside .form-description {
 
 
 .faq .content-wrapper {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,7 +605,7 @@ aside .form-description {
   }
 
   .copyright {
-    width: 33%;
+    width: 63%;
   }
 
 /* HOMEPAGE - MAIN Section Tablet Styles */
