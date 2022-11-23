@@ -135,11 +135,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -172,6 +172,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -230,6 +238,8 @@ footer .content-wrapper {
 /* ---- HERO Section ---- */
 
 .hero-area {
+  background: url(../img/jake-melara-30679-unsplash.jpg) center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +296,7 @@ input[type=button] {
 
 .signup {
   padding: 10px 0;
-  margin: 10px 20px;
+  margin: 0 20px;
 }
 
 .signup h3 {
@@ -302,7 +312,7 @@ input[type=button] {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  margin: 10px 20px;
+  margin: 0 20px;
   padding-bottom: 50px;
   width: 88%;
 }
@@ -324,6 +334,8 @@ input[type=button] {
 /* ---- Features Section ---- */
 
 .features .content-wrapper {
+  background: url(../img/rawpixel-800820-unsplash1.jpg) center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,14 +368,16 @@ input[type=button] {
 .features-item-description {
   margin: 0 80px;
 }
+.reviews {
+  background-color: #2a423a;
+}
 
 .reviews .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 30px 0;
-  background-color: #2a423a;
+  margin: 0 0;
   width: 100%;
 }
 
@@ -380,7 +394,13 @@ input[type=button] {
   width: 88%;
 }
 
-.reviews p {
+.reviews figure {
+width: 88%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap;
+margin: 0;
 }
 
 /* ---------------- Mobile - About styles --------------*/
@@ -562,6 +582,11 @@ input[type=button] {
     justify-content: space-between;
     flex-basis: 83%;
   }
+
+  header figure {
+    width: 29%;
+  }
+
   .header-divider {
     width: 0%;
     margin: 0;
@@ -611,8 +636,8 @@ input[type=button] {
 /* HOMEPAGE - MAIN Section Tablet Styles */
 
   .hero-area h1{
-    width: 80%;
-    padding: 90px 160px 400px 45px;
+    flex-basis: 65%;
+    padding: 90px 160px 400px 0;
   }
   
   #signup-section{
@@ -631,7 +656,7 @@ input[type=button] {
   aside .form {
     width: 38%;
     margin: 0;
-    padding: 0 0;
+    padding: 0 0 45px 0;
   }
 
   .features {
@@ -639,8 +664,9 @@ input[type=button] {
   }
   
   .features h2 {
-    width: 85%;
+    flex-basis: 75%;
     padding: 90px 0 0 0;
+    margin: 0;
   }
 
   .features article {
@@ -658,15 +684,35 @@ input[type=button] {
   }
 
   .reviews h2 {
-    padding-left: 60px;
+    padding: 100px 0 25px 60px; 
+    flex-basis: 60%;
+    margin: 0;
+    flex-flow: row wrap;
+  }
+
+  .reviews figure {
+    width: 50%;
+    flex-basis: 45%;
+    padding: 0 0 100px 60px;
   }
 
   .reviews .lacrue-bottling {
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
-    margin: 0 60px; 
+    margin: 0;
+    padding: 0 0 100px 10px; 
+    flex-basis: 40%;
   }
+  .lacrue-bottling {
+    padding: 0 0 0 30px;
+  }
+
+  .lacrue-bottling h3 {
+    flex-basis: 50%;
+    margin: 0;
+  }
+
 
 /* FAQ Tablet Styles */
 
@@ -763,9 +809,12 @@ footer {
   width: 100%;
 }
 
+.features .content-wrapper {
+  width: 100%;
+}
+
 .reviews {
-  width: 80%;
-  padding-left: 119px;
+  width: 100%;
 }
 
 /* FAQ Styles */
