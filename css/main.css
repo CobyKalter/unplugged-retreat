@@ -747,12 +747,18 @@ margin: 0;
 
 .mission-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content h2 {
+  width: 80%;
 }
 
 .mission-content p {
-  width: 80%;
+  flex-basis: 40%;
+  padding: 10px;
 }
 
 .contact-section .content-wrapper h2 {
@@ -763,6 +769,10 @@ margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.map figure {
+  padding-bottom: 45%;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -871,6 +881,10 @@ footer {
 
 .mission-content p{
   flex-basis: 45%;
+}
+
+.map figure {
+  padding-bottom: 38%;
 }
 
 .contact-section h2{
