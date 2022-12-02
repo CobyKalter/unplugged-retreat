@@ -180,23 +180,28 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 10px;
 }
 
 .header-divider {
   width: 100%;
   margin: 5px 0;
+  border: 1px solid #3a3a3a;
 }
 
 header nav {
   font-weight: bold;
   font-size: 1.125em;
   width: 60%;
-  padding: 15px 0;
+  padding: 0;
 }
 
 header nav ul {
   display: flex;
+  justify-content: space-around;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -209,9 +214,6 @@ footer .content-wrapper {
   flex-flow: row wrap;
 }
 
-.footer-content {
-
-}
 .footer p {
   margin; 0;
 }
@@ -262,33 +264,38 @@ footer .content-wrapper {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  height: 450px;
 }
 
 .hero-area h1 {
-  padding: 45px 20px;
+  padding: 45px 5px;
 }
 
-.hero-area img {
-
-}
 
 /* ---- Form & Signup Section ---- */
-
-aside .form-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 30px 0 50px 0;
-}
 
 aside {
   background-color: #527158;
 }
 
+.signup {
+  padding: 10px 0;
+  margin: 0 20px;
+}
+
+.signup h3 {
+  padding-bottom: 3px;
+  margin: 0;
+}
+
+.signup p {
+  padding-top: 3px;
+  margin: 0;
+}
+
 aside .form {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 input[type=text] {
@@ -313,19 +320,6 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-
-.signup {
-  padding: 10px 0;
-  margin: 0 20px;
-}
-
-.signup h3 {
-  padding-bottom: 7px;
-}
-
-.signup p {
-  padding-top: 7px;
-}
 
 .form {
   display: flex;
@@ -360,7 +354,6 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 
 }
 
 .features article {
@@ -369,7 +362,7 @@ input[type=button] {
 
 .features h2 {
   margin: 0 20px;
-  padding: 50px 0; 
+  padding: 30px 0 0 0; 
 }
 
 .features p {
@@ -378,11 +371,15 @@ input[type=button] {
 }
 
 .features-item {
-  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 30px 0;
 }
 
 .fontawesome-icon {
-  padding: 40px 0;
+  padding: 0;
 }
 
 .features i {
@@ -392,6 +389,7 @@ input[type=button] {
 
 .features-item-description {
   margin: 0 80px;
+  width: 75%;
 }
 .reviews {
   background-color: #2a423a;
@@ -438,10 +436,6 @@ margin: 0;
   flex-flow: row wrap;
 }
 
-.mission-content {
-
-}
-
 .map figure{
  width: 100%;
  height:0;
@@ -466,26 +460,6 @@ margin: 0;
   flex-flow: row wrap;
 }
 
-.contact-content {
-
-}
-
-.contact-column-1 {
-
-}
-
-.info-address {
-
-}
-
-.contact-column-2 {
-  
-}
-
-.facilitator-contact {
-
-}
-
 /* ----------------- Mobile - FAQ styles ---------------*/
 
 
@@ -496,25 +470,6 @@ margin: 0;
   align-items: center;
   flex-flow: row wrap;
 }
-
-.faq-content {
-
-}
-
-.faq-1 {
-
-}
-.faq-2 {
-  
-}
-.faq-3 {
-  
-}
-.faq-4 {
-  
-}
-
-
 
 
 /* ==========================================================================
@@ -656,6 +611,7 @@ margin: 0;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-flow: row wrap;
+    padding-top: 70px;
   }
 
   .contact {
@@ -664,10 +620,12 @@ margin: 0;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    padding-bottom: 70px;
   }
 
   .contact h3 {
     justify-content: center;
+    font-size: 1.5em;
   }
 
   .contact address {
@@ -677,6 +635,10 @@ margin: 0;
   .social {
     width: 50%;
     flex-basis: 40%;
+  }
+
+  .social h3 {
+    font-size: 1.5em;
   }
 
   .social-icons p {
@@ -689,9 +651,15 @@ margin: 0;
 
 /* HOMEPAGE - MAIN Section Tablet Styles */
 
+  .hero-area {
+    height: 600px;
+  }
+
   .hero-area h1{
-    flex-basis: 65%;
-    padding: 90px 160px 400px 0;
+    font-size: 3em;
+    flex-basis: 75%;
+    padding: 90px 160px 400px 65px;
+    line-height: .75em;
   }
   
   #signup-section{
@@ -703,14 +671,30 @@ margin: 0;
 
   .signup {
     margin: 0; 
-    padding: 0;
+    padding: 25px 0 0 0;
     width: 33%;
   }
 
+  .signup h3 {
+    font-size: 1.5em;
+  }
+
   aside .form {
-    width: 38%;
+    width: 40%;
     margin: 0;
-    padding: 0 0 45px 0;
+    padding: 0 0 25px 0;
+  }
+
+  .form input {
+    padding: 10px 0;
+  }
+
+  #email-input {
+    margin-bottom: 0;
+  }
+
+  .form h3 {
+    font-size: 1.5em;
   }
 
   .features {
@@ -718,7 +702,8 @@ margin: 0;
   }
   
   .features h2 {
-    flex-basis: 75%;
+    font-size: 2.25em;
+    flex-basis: 85%;
     padding: 90px 0 0 0;
     margin: 0;
   }
@@ -728,7 +713,7 @@ margin: 0;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    flex-basis: 20%;
+    flex-basis: 26%;
     padding: 40px 75px;
     
   }
@@ -738,13 +723,18 @@ margin: 0;
     margin-bottom: 26px;
   }
 
+  .features-item-description {
+    width: 100%;
+  }
+
   .reviews .content-wrapper {
     justify-content: flex-start;
   }
 
   .reviews h2 {
+    font-size: 2.25em;
     padding: 100px 0 25px 60px; 
-    flex-basis: 60%;
+    flex-basis: 65%;
     margin: 0;
     flex-flow: row wrap;
   }
@@ -752,7 +742,7 @@ margin: 0;
   .reviews figure {
     width: 50%;
     flex-basis: 45%;
-    padding: 0 0 100px 60px;
+    padding: 0 0 118px 60px;
   }
 
   .reviews .lacrue-bottling {
@@ -768,8 +758,14 @@ margin: 0;
   }
 
   .lacrue-bottling h3 {
-    flex-basis: 50%;
+    flex-basis: 70%;
+    font-size: 1.5em;
     margin: 0;
+  }
+
+  .lacrue-bottling p {
+    margin-top: 15px;
+    line-height: 1.5em;
   }
 
 
@@ -847,10 +843,19 @@ footer {
 
 .contact h3 {
   width: 63%;
+  font-size: 1.875em;
+}
+
+.contact address {
+  font-size: 1.125em;
 }
 
 .social {
   text-align: center;
+}
+
+.social h3 {
+  font-size: 1.875em;
 }
 
 .social-icons {
@@ -864,22 +869,47 @@ footer {
 .copyright {
   text-align: center;
   flex-basis: 100%;
+  font-size: 1em;
 }
 
 /* HOMEPAGE Styles */
+
+.hero-area {
+  height: 600px;
+}
 
 .hero-area h1 {
   width: 56%;
   text-align: left;
   flex-flow: row wrap;
+  flex-basis: 72%;
+  font-size: 3.75em;
+  line-height: 1em;
+  padding-top: 55px; 
+}
+
+#signup-section {
+  justify-content: space-evenly;
 }
 
 .signup {
   width: 26%;
 }
 
-.form {
+.signup h3 {
+  font-size: 1.875em;
+}
+
+.signup p {
+  font-size: 1.125em;
+}
+
+aside .form {
   width: 26%;
+}
+
+.form h3 {
+  font-size: 1.875em;
 }
 
 .features {
@@ -888,14 +918,52 @@ footer {
 
 .features .content-wrapper {
   width: 100%;
+  padding-bottom: 80px;
+}
+.features h2 {
+  flex-basis: 80%;
+}
+
+.features article {
+  flex-basis: 15%;
 }
 
 .features i {
   margin-bottom: 25px;
 }
 
+.features-item-description {
+  font-size: 1.125em;
+}
+
 .reviews {
   width: 100%;
+}
+
+.reviews h2 {
+  font-size: 2.25em;
+  padding-left: 118px;
+}
+
+.reviews .lacrue-bottling {
+  flex-basis: 40%;
+  padding-top: 30px;
+}
+
+.reviews h3 {
+  font-size: 1.875em;
+  padding-bottom: 0;
+}
+
+.reviews figure {
+  flex-basis: 40%;
+  padding-top: 95px;
+  padding-right: 35px;
+  padding-left: 118px;
+}
+
+.reviews p {
+  font-size: 1.125em;
 }
 
 /* FAQ Styles */
