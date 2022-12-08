@@ -217,12 +217,19 @@ footer .content-wrapper {
 .footer p {
   margin; 0;
 }
+
 .contact {
   text-align: center;
+  margin-top: 50px;
 }
 
 .social {
   text-align: center;
+  margin-top: 50px;
+}
+
+.social h3 {
+  margin-bottom: 0;
 }
 
 .social-icons {
@@ -436,9 +443,26 @@ margin: 0;
   flex-flow: row wrap;
 }
 
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.mission-content h2 {
+  margin: 50px 0 0 0;
+  width: 88%;
+}
+
+.mission-content p {
+  padding: 10px 20px;
+  margin: 0;
+}
+
 .map figure{
  width: 100%;
- height:0;
+ height: 0;
  padding-bottom: 125%;
  overflow: hidden;
  position: relative;
@@ -455,9 +479,35 @@ margin: 0;
 .contact-section .content-wrapper {
   background-color: #2a423a;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.contact-section h2 {
+  width: 88%;
+  padding-left: 20px;
+}
+
+.contact-content {
+  width: 75%;
+  padding-left: 20px;
+}
+
+.contact-content h3 {
+  margin: 0;
+}
+
+.contact-column-1 {
+  padding-bottom: 20px;
+}
+
+.contact-content address {
+  font-size: .875em;
+}
+
+.contact-column-2 {
+  padding-bottom: 50px;
 }
 
 /* ----------------- Mobile - FAQ styles ---------------*/
@@ -639,6 +689,7 @@ margin: 0;
 
   .social h3 {
     font-size: 1.5em;
+    padding-bottom: 35px;
   }
 
   .social-icons p {
@@ -784,38 +835,43 @@ margin: 0;
   width: 100%;
 }
 
-}
-
 /* ABOUT PAGE Tablet Styles */
 
 .mission-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+ flex-flow: row wrap;
 }
 
 .mission-content h2 {
-  width: 80%;
+  width: 83%;
 }
 
 .mission-content p {
   flex-basis: 40%;
-  padding: 10px;
+  padding: 70px 10px;
+}
+
+.contact-section .content-wrapper {
+  justify-content: flex-start;
 }
 
 .contact-section .content-wrapper h2 {
-  width: 66%;
+  width: 65%;
+  padding: 90px 40px 50px 60px;
+  margin: 0;
 }
 
 .contact-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 0 90px 60px;
 }
+
+
 
 .map figure {
   padding-bottom: 45%;
+}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -966,7 +1022,8 @@ aside .form {
   font-size: 1.125em;
 }
 
-/* FAQ Styles */
+/* FAQ Desktop Styles */
+
 .faq {
   width: 100%;
 }
@@ -995,7 +1052,7 @@ aside .form {
 }
 
 
-/* ABOUT Styles */
+/* ABOUT Desktop Styles */
 
 .mission-content {
   flex-flow: row wrap;
@@ -1004,23 +1061,42 @@ aside .form {
 
 .mission-content h2{
   flex-basis: 100%;
+  line-height: 1em;
+  font-size: 3em;
 }
 
 .mission-content p{
-  flex-basis: 45%;
+  flex-basis: 40%;
+  padding: 30px 95px 90px 0;
+  font-size: 1.125em;
 }
 
 .map figure {
   padding-bottom: 38%;
 }
 
-.contact-section h2{
+.contact-section .content-wrapper h2{
   flex-basis: 80%;
+  font-size: 3em;
+  padding-top: 100px;
+  padding-left: 120px;
 }
 
 .contact-content {
   justify-content: flex-start;
   flex-basis: 80%;
+  padding-left: 120px;
+  padding-bottom: 90px;
+
+}
+
+.contact-content h3 {
+  font-size: 1.875em;
+  padding-bottom: 40px;
+}
+
+.contact-content address {
+  font-size: 1.125em;
 }
 
 .contact-column-1 {
