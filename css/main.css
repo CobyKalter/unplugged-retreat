@@ -215,7 +215,7 @@ footer .content-wrapper {
 }
 
 .footer p {
-  margin; 0;
+  margin: 0;
 }
 
 .contact {
@@ -696,10 +696,6 @@ margin: 0;
   .contact h3 {
     justify-content: center;
     font-size: 1.5em;
-  }
-
-  .contact address {
-    flex-basis:
   }
 
   .social {
