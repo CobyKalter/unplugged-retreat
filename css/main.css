@@ -633,6 +633,11 @@ margin: 0;
 @media only screen and (min-width: 768px) {
 /* Tablet Styles Here */
 
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
 /* Header-Footer Styles */
 
   header {
@@ -658,11 +663,11 @@ margin: 0;
   }
 
   header nav {
-    width: 50%;
+    width: 20%;
   }
 
   header nav ul {
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-flow: row;
   }
 
@@ -866,8 +871,6 @@ margin: 0;
   padding-right: 31px;
 }
 
-
-
 .faq-content h3 {
   font-size: .875em;
   margin-top: 0;
@@ -877,15 +880,17 @@ margin: 0;
 
 .mission-content {
  flex-flow: row wrap;
+ margin: 100px 0;
 }
 
 .mission-content h2 {
-  width: 83%;
+  font-size: 2.25em;
+  width: 85%;
 }
 
 .mission-content p {
   flex-basis: 40%;
-  padding: 70px 10px;
+  padding: 40px 10px;
 }
 
 .contact-section .content-wrapper {
@@ -893,8 +898,8 @@ margin: 0;
 }
 
 .contact-section .content-wrapper h2 {
-  width: 65%;
-  padding: 90px 40px 50px 60px;
+  width: 70%;
+  padding: 90px 40px 0px 60px;
   margin: 0;
 }
 
@@ -903,9 +908,13 @@ margin: 0;
   justify-content: space-between;
   align-items: center;
   padding: 0 0 90px 60px;
+  width: 83%;
 }
 
-
+.contact-content h3 {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
 
 .map figure {
   padding-bottom: 45%;
@@ -919,10 +928,6 @@ margin: 0;
 
 header {
   width: 100%;
-}
-
-header nav {
- width: 13%;
 }
 
 footer {
@@ -1109,7 +1114,6 @@ aside .form {
 
 .mission-content h2{
   flex-basis: 100%;
-  line-height: 1em;
   font-size: 3em;
 }
 
