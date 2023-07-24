@@ -1154,6 +1154,15 @@ aside .form {
 
 }
 
+@media only screen and (min-width: 1500px) {
+  /* Large Screen Styles */
+
+  .features article {
+    flex-basis: 20%;
+  }
+
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
